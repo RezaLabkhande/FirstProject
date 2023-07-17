@@ -41,22 +41,7 @@ class MainActivity : AppCompatActivity() {
                     call: Call<model_activation>,
                     response: Response<model_activation>
                 ) {
-                    if (response.isSuccessful) {
-                        var item = response.body()
-                        if (response.body().code == 200) {
-                           Toast.makeText(this@MainActivity,"Its Ok",Toast.LENGTH_SHORT).show()
-                        } else {
-                            Toast.makeText(this@MainActivity, "${item.msg}", Toast.LENGTH_LONG)
-                                .show()
-                        }
 
-                    } else {
-                        Toast.makeText(
-                            this@MainActivity,
-                            "مشکلی در ارتباط با سرور به وجود آمده است",
-                            Toast.LENGTH_LONG
-                        ).show()
-                    }
 
 
                 }
