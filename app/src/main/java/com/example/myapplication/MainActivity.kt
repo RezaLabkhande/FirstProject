@@ -29,6 +29,15 @@ class MainActivity : AppCompatActivity() {
     fun Send_Rrequest() {
 //
 
+
+
+
+
+
+
+
+
+
         var data=active()
         data.activationCode="vsvsvas"
         data.cpuID="svsv"
