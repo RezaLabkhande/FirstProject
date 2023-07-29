@@ -5,7 +5,6 @@ import retrofit2.http.POST
 import retrofit2.http.Part
 
 interface Api_Service {
-
     // http://1.1.1.1
     // https://www.google.com
 
@@ -14,6 +13,7 @@ interface Api_Service {
     @Multipart
     fun activation(@Part("active")modeAction: active)
             :retrofit2.Call<model_activation>
+
 
 
 

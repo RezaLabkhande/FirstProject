@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button>(R.id.button2).setOnClickListener {
+        findViewById<Button>(R.id.button2)
+            .setOnClickListener {
             Send_Rrequest()
         }
 
@@ -42,10 +43,8 @@ class MainActivity : AppCompatActivity() {
                     response: Response<model_activation>
                 ) {
 
-
-
-
-
+                    var s=response.body();
+                    Log.i("dcdsdvsv",s.toString())
 
 
 
@@ -54,7 +53,8 @@ class MainActivity : AppCompatActivity() {
 
 
 
-                override fun onFailure(call: Call<model_activation>, t: Throwable) {
+                override fun onFailure(call: Call<model_activation>, t: Throwable)
+                {
                     Log.i("sdvhnsadvguidsan", t.message.toString())
                     Toast.makeText(
                         this@MainActivity,
